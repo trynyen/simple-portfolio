@@ -1,0 +1,10 @@
+.projects {
+  border: solid black 2px;
+  float: left;
+  margin: 10px;
+}
+
+.projectImg {
+  width: 400px;
+  height: 400px;
+}
