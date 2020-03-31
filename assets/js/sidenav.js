@@ -26,11 +26,11 @@ closebtn.addEventListener('click', function(e){
   closeNav();
 });
 
-mainArea.addEventListener('click', function(e){
-  e.preventDefault();
-  if (sideBarOpen == true){
-    closeNav();
-  }
-});
+// mainArea.addEventListener('click', function(e){
+//   e.preventDefault();
+//   if (sideBarOpen == true){
+//     closeNav();
+//   }
+// });
 
 })
