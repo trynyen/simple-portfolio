@@ -8,17 +8,31 @@ projects.forEach(project => {
   let heroku = document.createElement("a");
   let github = document.createElement("a");
   let image = document.createElement("img");
-  let btn = document.createElement("button");
-  let title = document.createElement("h5");
+  let projectName = document.createElement("h5");
+  let technologies = project.technologies;
 
+  projectName.textContent = project.name;
+  github.setAttribute("href",project.github);
+  github.setAttribute("target", "_blank");
   heroku.setAttribute("href", project.heroku)
-  heroku.setAttribute("target", "_blank")
+  heroku.setAttribute("target", "_blank");
   image.setAttribute("src", project.img);
+  
 
-  figcaption.appendChild(title,github,btn);
-  heroku.appendChild(image);
-  figure.appendChild(heroku,figcaption);
-  projectContainer.appendChild(figure);
+  technologies.forEach(technology => {
+  let techs = document.createElement("button");
+  techs.textContent = technology;
+
+  figcaption.append(projectName,github,techs);
+  heroku.append(image);
+  figure.append(heroku, figcaption);
+  projectContainer.append(figure);
+  });
+  // t
+  // techs.textContent = project.technologies[0]
+
+
+
 }
   
   // document.addC

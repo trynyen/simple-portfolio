@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
 let sideBarOpen;
 let sideNav = document.getElementById("mySidenav");
 let mainArea = document.querySelector(".container");
