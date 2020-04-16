@@ -12,30 +12,27 @@ projects.forEach(project => {
   let technologies = project.technologies;
 
   projectName.textContent = project.name;
-  github.setAttribute("href",project.github);
+  github.setAttribute("href", project.github);
   github.setAttribute("target", "_blank");
+  github.className = "fa fa-github"
   heroku.setAttribute("href", project.heroku)
   heroku.setAttribute("target", "_blank");
   image.setAttribute("src", project.img);
-  
+  image.className = "projectImg";
+
 
   technologies.forEach(technology => {
-  let techs = document.createElement("button");
-  techs.textContent = technology;
+    let techs = document.createElement("button");
+    techs.textContent = technology;
 
-  figcaption.append(projectName,github,techs);
-  heroku.append(image);
-  figure.append(heroku, figcaption);
-  projectContainer.append(figure);
+    figcaption.prepend(projectName, github);
+    figcaption.append(techs);
+    heroku.append(image);
+    figure.append(heroku, figcaption);
+    projectContainer.append(figure);
   });
-  // t
-  // techs.textContent = project.technologies[0]
-
-
-
 }
-  
-  // document.addC
+
 )
 
 {/* <div class="card" style="width: 18rem;">

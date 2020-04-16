@@ -10,8 +10,8 @@ const projects = [
     name:"Eat Da Burger",
     heroku:"https://eat-da-burger-tn.herokuapp.com/",
     github:"https://github.com/trynyen/eat-da-burger",
-    img:"./assets/images/Friend Finder.png",
-    technologies:["html", "css","javascript"]
+    img:"./assets/images/Eat Da Burger.png",
+    technologies:["html", "css","javascript","mongoDB"]
   },
   {
     name:"Friend Finder",

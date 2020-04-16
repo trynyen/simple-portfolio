@@ -1,3 +1,9 @@
+#projectContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .projects {
   border: solid black 2px;
   float: left;
