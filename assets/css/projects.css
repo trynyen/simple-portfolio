@@ -14,3 +14,26 @@
   width: 400px;
   height: 400px;
 }
+
+
+.filters-group {
+  display: inline-flex;
+  border: 4px solid #efeded;
+  margin-bottom: 30px;
+}
+.filters-group .button {
+  padding: 14px 30px;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  /* -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  outline: none; */
+}
+.filters-group {
+  background: rgba(242, 28, 28, 0.63);
+  color: #fff;
+}
